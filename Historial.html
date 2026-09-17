@@ -11,51 +11,52 @@
 
 <body>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Logo</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-      </ul>
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="bi bi-person-circle fs-5"></i>
-          </a>
-          <ul class="dropdown-menu dropdown-menu-end">
-            <li><a class="dropdown-item" href="#">Perfil</a></li>
-            <li><a class="dropdown-item" href="#">Configuración</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-    <div class="d-flex">
-                    <div>
-                    <h5 class="mb-0">Dashboard general</h5>
-                    <div class="text-secondary small">Miércoles, 16 de septiembre — vista general de la tienda</div>
-                </div>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-person-circle fs-5"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Perfil</a></li>
+                            <li><a class="dropdown-item" href="#">Configuración</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+        <div class="p-3">
+            <h5 class="mb-0">Dashboard general</h5>
+            <div class="text-secondary small">Miércoles, 16 de septiembre — vista general de la tienda</div>
+        </div>
         <!-- Sidebar -->
         <button type="button" class="btn btn-dark rounded-circle shadow position-fixed 
             bottom-0 start-0 m-4 d-flex align-items-center justify-content-center" style="width:56px;height:56px;"
             title="Acción rápida" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSide">
             <i class="bi bi-arrow-right" style="font-size:1.5rem; color:white;"></i>
         </button>
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasSide" aria-labelledby="offcanvasExampleLabel" >
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasSide" aria-labelledby="offcanvasExampleLabel">
             <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -69,57 +70,57 @@
                 </div>
             </div>
         </div>
-    <!-- Tabla Historial -->
-    <div class="container mt-3">
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Administrador</th>
-                    <th>Accion</th>
-                    <th>Descripcion</th>
-                    <th>Fecha</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th>1</th>
-                    <th>Juan Perez</th>
-                    <th>Modificar</th>
-                    <th>Cambio de precio en producto Flying V</th>
-                    <th>12-08-2026</th>
-                    <th>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#verHistorialModal">Ver</button>
-                    </th>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+        <!-- Tabla Historial -->
+        <div class="container mt-3">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Administrador</th>
+                        <th>Accion</th>
+                        <th>Descripcion</th>
+                        <th>Fecha</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>1</th>
+                        <th>Juan Perez</th>
+                        <th>Modificar</th>
+                        <th>Cambio de precio en producto Flying V</th>
+                        <th>12-08-2026</th>
+                        <th>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#verHistorialModal">Ver</button>
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-    <!-- Modal Ver Detalle -->
-    <div class="modal" id="verHistorialModal">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <h4 class="modal-title">Modal Heading</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <!-- Modal body -->
-                <div class="modal-body">
-                    Pendiente
-                </div>
-                <!-- Modal footer -->
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        <!-- Modal Ver Detalle -->
+        <div class="modal" id="verHistorialModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Modal Heading</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        Pendiente
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
