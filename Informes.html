@@ -10,6 +10,26 @@
 </head>
 
 <body>
+            <!-- Sidebar -->
+        <button type="button" class="btn btn-dark rounded-circle shadow position-fixed 
+            bottom-0 start-0 m-4 d-flex align-items-center justify-content-center" style="width:56px;height:56px;"
+            title="Acción rápida" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSide">
+            <i class="bi bi-arrow-right" style="font-size:1.5rem; color:white;"></i>
+        </button>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasSide" aria-labelledby="offcanvasExampleLabel" >
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body p-0">
+                <div class="list-group list-group-flush">
+                    <a href="#" class="list-group-item list-group-item-action fs-5 py-3">Dashboard</a>
+                    <a href="#" class="list-group-item list-group-item-action fs-5 py-3">Pedidos</a>
+                    <a href="#" class="list-group-item list-group-item-action fs-5 py-3">Productos</a>
+                    <a href="#" class="list-group-item list-group-item-action fs-5 py-3">Soporte</a>
+                </div>
+            </div>
+        </div>
     <!-- Modal Generar Informe -->
     <div class="modal" id="genInformeModal">
         <div class="modal-dialog">
